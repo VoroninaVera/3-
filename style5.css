@@ -1,0 +1,135 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(московский\ новый\ год.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.menu__link:hover {
+  color: red;
+}
+
+.menu__link:active {
+  color: green;
+}
+
+.menu__list:first-child .menu__link {
+  text-decoration: none;
+}
+
+.menu__list:last-child .menu__link {
+  font-weight: bold;
+}
+
+.menu__list:nth-child(3) .menu__link {
+  background-color: #ccc;
+}
+.product {
+  width: 250px;
+  padding: 24px;
+  border: 1px solid #000;
+}
+
+.product__img {
+  background-color: forestgreen;
+  height: 150px;
+}
+.product {
+  width: 250px;
+  padding: 24px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.product__img {
+  background-color: forestgreen;
+  height: 150px;
+}
+
+.product::after {
+  content: 'new';
+  background-color: darkred;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  color: white;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.product::before {
+  content: 'sale';
+  background-color: orange;
+  color: white;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.product::after {
+  content: 'new';
+  display: block;
+}
+
+.item {
+  width: 150px;
+  height: 86px;
+  background-color: forestgreen;
+  transition: transform 1s;
+  border: 1px solid #000;
+}
+
+.item_1:hover {
+  transform: translateX(50px);
+}
+
+.item_2:hover {
+  transform: scale(2);
+}
+
+.item_3:hover {
+  transform: rotate(60deg);
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.mam-box:hover .star-mam {
+            fill: #FFA500;
+            transform: rotate(180deg) scale(1.2);
+        }
+
+.mam-box {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 25px;
+            width: 150px;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+        
+        .mam-box:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-10px);
+        }
